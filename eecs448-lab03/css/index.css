@@ -1,0 +1,14 @@
+.container-segment{
+	position: relative;
+	margin: 0;
+	max-width: 700px;
+}
+
+.container-content{
+	position: absolute;
+	margin 0px 0px 0px 50px;
+}
+
+.navbar{
+	max-width: 250px;
+}

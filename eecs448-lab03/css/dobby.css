@@ -1,0 +1,50 @@
+body{
+	background-image:url('../img/papyrus_tile.png');
+}
+
+.title-box{
+	position: relative;
+	margin: 0 auto;
+	background-color:rgba(200,200,70,1);
+	color: brown;
+	max-width: 900px;
+	max-height: 45px;
+	text-align:center;
+	font-family: 'helvetica';
+	font-size: 32px;
+	padding: 15px 15xp 15px 15px;
+}
+
+.content-box{
+	position:relative;
+	margin: 0 auto;
+	background-color:rgba(200,200,70,0.5);
+	color: brown;
+	max-width: 900px;
+	text-align:center;
+	font-family: 'helvetica';
+	font-size: 22px;
+}
+
+.floating-text{
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'helvetica'
+}
+
+.legal-text{
+	text-align: center;
+	font-family: arial;
+	color: black;
+}
+
+.pic{
+	display: block;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right:0;
+	text-align:center;
+	padding: 15px 15px 15px 15px;
+}
