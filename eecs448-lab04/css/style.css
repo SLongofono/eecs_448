@@ -1,0 +1,184 @@
+body{
+	font-family:'Lucida Sans Unicode';
+}
+
+/*
+Thanks to stackExchange user lukart for this quick fix to center floating divs
+Wrapping them in rows with offset of 50% left and then inner rows with offset
+of -50% effectively centers any floating items within.
+Accessed September 2016
+https://stackoverflow.com/questions/4767971/how-do-i-center-float-elements
+*/
+.row{
+	float:left;
+	position:relative;
+	left:50%;
+}
+
+.inner{
+	float:left;
+	position:relative;
+	left:-50%;
+}
+
+.header{
+	width:100%;
+	text-align:center;
+}
+
+.row:after{
+	clear:both;
+	display:block;
+	content:"";
+}
+.content-col{
+	float:left;
+	margin-left:5px;
+	margin-bottom:5px;
+	width:32%;
+	padding: 15px 5px 15px 5px;
+	text-align: center;
+	font-size: 18px;
+	background-image: -webkit-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -moz-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -ms-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -o-linear-gradient(top, #ededed, #ffffff);
+  	background-image: linear-gradient(to bottom, #ededed, #ffffff);
+	border-radius: 15px;
+}
+
+.product-select{
+	font-size:14px;
+}
+
+.product-login{
+	margin-left:10px;
+	margin-bottom:10px;
+	width:45%;
+	float:left;
+	padding: 15px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.product-option{
+	margin-left:10px;
+	margin-bottom:10px;
+	width:45%;
+	float:left;
+	padding: 15px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.product-shipping{
+	margin-left:10px;
+	margin-bottom:10px;
+	width:45%;
+	float:left;
+	padding: 15px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.place{
+	width:45%;
+	background: #ededed;
+  	background-image: -webkit-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -moz-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -ms-linear-gradient(top, #ededed, #ffffff);
+  	background-image: -o-linear-gradient(top, #ededed, #ffffff);
+  	background-image: linear-gradient(to bottom, #ededed, #ffffff);
+  	border-radius: 15px;
+	font-size: 28px;
+  	padding: 10px 20px 10px 20px;
+}
+
+.place:hover{
+	background:#e6e6e6;
+}
+
+.error{
+	text-align: center;
+	font-size: 18px;
+	color: red;
+}
+
+.receipt{
+	float:left;
+	margin-left:5px;
+	margin-bottom:5px;
+	padding: 15px 5px 15px 5px;
+	text-align: center;
+	font-size: 18px;
+	background-image: -webkit-linear-gradient(top, #ededed, #ffffff);
+	background-image: -moz-linear-gradient(top, #ededed, #ffffff);
+	background-image: -ms-linear-gradient(top, #ededed, #ffffff);
+	background-image: -o-linear-gradient(top, #ededed, #ffffff);
+	background-image: linear-gradient(to bottom, #ededed, #ffffff);
+	border-radius: 15px;
+}
+}
+
+a: -webkit-any-link {
+    color: black;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+a:{
+    color: black;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+a:visited{
+    color: black;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+
+table{
+	*border-collapse:collapse;
+	border-spacing: 0;
+	box-shadow: 2px 2px 2px #d9d9d9;
+}
+
+tr, td{
+	border:1px solid #d5d5d5;
+	text-align:center;
+	padding:10px;
+}
+
+th{
+	font-weight:bold;
+	text-align:center;
+	padding:10px;
+	background-image: -webkit-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+    background-image: -o-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #eeeeee), to(#e4e4e4));
+    background-image: linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
+    -webkit-filter: none;
+            filter: none;
+    border: 1px solid #d5d5d5;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+th:first-child{
+	border-radius: 6px 0 0 0;
+}
+
+th:last-child{
+	border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+	border-radius: 6px 6px 0 0;
+}
+
+.label{
+	font-weight: bold;
+}

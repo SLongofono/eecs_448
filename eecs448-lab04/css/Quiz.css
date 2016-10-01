@@ -1,0 +1,14 @@
+.feedback{
+    margin: 0 auto;
+    border: 1px black solid;
+    max-width: 50%;
+}
+
+hr{
+    max-width: 50%;
+}
+
+body{
+    font-family: 'arial';
+    font-size: 14px;
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>PHP Exercise</title>
+	<link href='../css/multi.css' type='text/css' rel='stylesheet'></link>
+	<h1>HTML Generation Exercise</h1>
+</head>
+<body>
+	<p id='target'>
+		Doop
+	</p>
+
+	<div class="navbar">
+		<a href="../index.htm">Home</a>
+	</div>
+
+</body>
+<script>
+	var output = '<?php include "multi.php"; ?>';
+	document.getElementById('target').innerHTML = output;
+	console.log(output);
+</script>
+</html>

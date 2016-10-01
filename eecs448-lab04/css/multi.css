@@ -1,0 +1,23 @@
+.entry:hover{
+	background: #d9ffcc;
+}
+
+table {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+
+.label {
+	font-weight:bold;
+	border:1px solid black;
+	text-align:center;
+	padding:10px;
+	color:#006600;
+	background:#ffffcc;
+}
+
+.entry{
+	border:1px solid black;
+	text-align:center;
+	padding:10px;
+}

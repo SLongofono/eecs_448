@@ -1,0 +1,136 @@
+<!doctype html>
+<head>
+<link href="../css/style.css" rel="stylesheet" type="text/css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='../js/formChecker.js'></script>
+</head>
+<body>
+<div class='row'>
+	<div class='inner'>
+		<h1 class='header'><br>KU Bridge Company, Ltd.<br><br></h1>
+	</div>
+</div>
+<div class='row' id="productDiv">
+	<div class='inner'>
+	<div class='content-col' id="product1">
+		<p class='content-label'>Brooklyn Bridge $10,000</p>
+		<img width="256" height="192" src="../img/brooklyn.png">
+		<p class='content-desc'>The iconic Brooklyn Bridge in New York City, United States</p>
+	</div>
+	<div class='content-col' id="product2">
+		<p class='content-label'>Golden Gate Bridge $25,000</p>
+		<img width="256" height="192" src="../img/golden.png">
+		<p class='content-desc'>The gateway to the bay city, San Francisco, United States</p>
+	</div>
+	<div class='content-col' id="product3">
+		<p class='content-label'>Ponte Vecchio $32,500</p>
+		<img width="256" height="192" src="../img/pontevecchio.png">
+		<p class='content-desc'>The famous tourist trap Ponte Vecchio in Florence, Italy</p>
+	</div>
+	<br>
+	<div class='content-col' id="product4">
+		<p class='content-label'>Millau Viaduct $50,000</p>
+		<img width="256" height="192" src="../img/millauvia.png">
+		<p class='content-desc'>The modern Millau Viaduct, spanning the French countryside</p>
+	</div>
+	<div class='content-col' id="product5">
+		<p class='content-label'>Sydney Harbour Bridge $30,000</p>
+		<img width="256" height="192" src="../img/sydney.png">
+		<p class='content-desc'>Sydney, Australia's Harbour bridge, with funny spelling</p>
+	</div>
+	<div class='content-col' id="product6">
+		<p class='content-label'>Tower Bridge $45,000</p>
+		<img width="256" height="192" src="../img/tower.png">
+		<p class='content-desc'>The lovely and venerable Tower Bridge in London, England</p>
+	</div>
+	</div>
+</div>
+<div class='row' id='formDiv'>
+	<div class='inner'>
+	<form action="customerBackEnd.php" id="myform" method="post">
+		<div class='product-shipping'>
+			Shipping options:<br>
+			<input type="radio" name="shipping" value="0" checked>Within 7 Days: Free!</input><br>
+			<input type="radio" name="shipping" value="1">Within 3 Days: $5.00</input><br>
+			<input type="radio" name="shipping" value="2">Overnight: $50.00</input><br>
+		</div>
+
+		<div class='product-option'>
+		<p>Free coat of paint with every purchase!</p>
+		Color: <select class="product-select" name="product1">
+			<option value="green">Paint it green</option>
+			<option value="red">Paint it red</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity1"></input>
+
+		<br>
+		Color: <select class="product-select" name="product2">
+			<option value="green">Paint it green</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity2"></input>
+
+		<br>
+		Color: <select class="product-select" name="product3">
+			<option value="green">Paint it green</option>
+			<option value="red">Paint it red</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity3"></input>
+
+		<br>
+		Color: <select class="product-select" name="product4">
+			<option value="green">Paint it green</option>
+			<option value="red">Paint it red</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity4"></input>
+
+		<br>
+		Color: <select class="product-select" name="product5">
+			<option value="green">Paint it green</option>
+			<option value="red">Paint it red</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity5"></input>
+
+		<br>
+		Color: <select class="product-select" name="product6">
+			<option value="green">Paint it green</option>
+			<option value="red">Paint it red</option>
+			<option value="black">Paint it black</option>
+			<option value="yellow">Paint it yellow</option>
+			<option value="blue">Paint it blue</option>
+		</select>
+		Qty: <input type="text" style="width:100px;" name="quantity6"></input>
+		<br>
+		</div>
+
+		<div class='product-login'>
+			Username:<input type="email" name="user"></input><br>
+			Password:<input type="password" name="pass"></input>
+		</div>
+		<div>
+			<input class='place' id='place' onsubmit='nope()' type='submit' value="Submit Order"></input>
+			<input class='place' id='cancel' type='reset' value="Reset"></input>
+		</div>
+	</form>
+
+	<p class="error" id="feedback"></p>
+
+	</div>
+</div>
+
+</body>
+</html>
