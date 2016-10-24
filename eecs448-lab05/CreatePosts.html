@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../js/postCheck.js"></script>
+<link href="../bootstrap-clean/bootstrap.min.css" rel="stylesheet"></link>
+</head>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar">f</span>
+                <span class="icon-bar">ff</span>
+                <span class="icon-bar">fff</span>
+            </button>
+            <a class="navbar-brand" href="#">Forum</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.htm">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<body>
+<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="well bs-component">
+                <form class="form-horizontal" id="postForm" action="CreatePosts.php" method="post">
+                  <fieldset>
+                    <legend>Say Something</legend>
+                    <div class="form-group">
+                      <label for="textArea" class="col-lg-2 control-label">User Name</label>
+                      <div class="col-lg-10">
+                        <input type="text" class="form-control" name="username" id="username" placeholder="enter your user name here">
+                      </div>
+                      <label for="textArea" rows="4" class="col-lg-2 control-label">Post Text</label>
+                      <div class="col-lg-10">
+                        <textArea class="form-control" name="post" id="post" placeholder="enter your post here (max 2000 characters)"></textArea>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <p class="error" id="feedback"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
