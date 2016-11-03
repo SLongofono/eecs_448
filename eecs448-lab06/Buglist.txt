@@ -6,3 +6,5 @@ removeBack() returns true when called on an empty list
 removeBack() fails to update the size correctly
 removeFront returns true when called on an empty list
 removeFront() fails to update size correctly
+removeFront() returns false on non-empty list, may be due to not actually removing anything and in turn not a bug
+removeBack() returns false on non-empty list, may be due to not actually removing anything and in turn not a bug
