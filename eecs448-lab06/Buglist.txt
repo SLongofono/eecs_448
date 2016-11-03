@@ -1,0 +1,8 @@
+isEmpty() returns true when list is not empty
+addBack() adds elements to the front of the list
+removeFront() does not remove elements from the list at all
+removeBack() does not remove elements from the list at all
+removeBack() returns true when called on an empty list
+removeBack() fails to update the size correctly
+removeFront returns true when called on an empty list
+removeFront() fails to update size correctly

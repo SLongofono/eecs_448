@@ -1,0 +1,28 @@
+********Size testing********
+
+Test passed: initial list size zero
+Test passed: empty list is empty
+Test passed: removeBack() on empty list returns false
+Test passed: removeFront() on empty list returns false
+Test passed: size updates correctly after addBack
+Test passed: size updates correctly after addFront
+Test failed: non-empty list, isEmpty() returns False
+Test failed: removeBack() returns true on non-empty list
+Test failed: removeBack() updates size correctly
+Test failed: removeFront() returns true on non-empty list
+Test failed: removeFront() updates size correctly
+
+
+********Add/Remove Testing********
+
+Test passed: search on an empty list returns false
+Test passed: search on an element in a list returns true
+Test passed: search on element which does not exist returns false
+Test passed: addFront() actually adds an element
+Test passed: addFront() adds only a single element
+Test passed: addFront() places items at front of list
+Test failed: removeFront() correctly removes an item from the front
+Test failed: removeFront() on non-empty list updates size correctly
+Test failed: addBack() places items at the rear of list
+Test failed: removeBack() returns true on non-empty list
+Test passed: removeBack() correctly removes an item from the rear
